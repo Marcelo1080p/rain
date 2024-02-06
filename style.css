@@ -1,0 +1,23 @@
+body {
+    min-height: 100vh;
+    background-color: #171717;
+    overflow: hidden;
+}
+
+p {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: hsl(908, 100%, 80%);
+    border-radius: 50%;
+    top: -50px;
+    animation: translate 5s infinite linear;
+}
+
+@keyframes translate {
+    from {
+        transform: translateY(0);
+    } to {
+        transform: translateY(calc(100vh + 50px));
+    }
+}
